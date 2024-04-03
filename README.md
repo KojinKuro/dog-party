@@ -1,25 +1,45 @@
-# Static Comp Challenge - Frontend Module 2
+# 🐶 Dog Comp
 
-## Project Spec  
-[https://frontend.turing.edu/projects/M2-static-comp-challenge.html](https://frontend.turing.edu/projects/M2-static-comp-challenge.html)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
-## Setup
-1. Fork + clone down this repo
-1. `cd` into the directory
-1. Install the library dependencies with `npm install`
-1. To verify that it is setup correctly, run `npm start` in your terminal. Go to `http://localhost:8080/` and you should see a page with the Turing logo image and a beautiful gradient background. If that's the case, you're good to go.
-2. Enter `control + c` in your terminal to stop the server at any time.
+## 📝 Description
 
-## Specification
+This is a project created for on practicing [Sass](https://sass-lang.com/) to match a design comp provided. The design comp is for a fake dog website. Through doing this I gained a better understanding of the more advanced Sass features that I avoided using in the past. This project only uses HTML and Sass, with Webpack setup as the bundler.
 
-This static comp challenge will keep you exercising that HTML/SCSS muscle. :muscle: You will be asked to recreate the image below by recreating the screenshot using HTML and SCSS.
+## ⚙️ Setup
 
-In other static comp challenges (but not this one), we'll give you a bit of flexibility, however the objective is to build something that **very closely** represents the original design.
+```
+git clone git@github.com:KojinKuro/dog-party.git
+cd dog-party
+npm install
+npm run start
+```
 
-Once you get into the workforce, building out comps that reflect the designer's choice in layout, spacing, font, imagery, and color to the smallest detail, is a requirement.
+Server URL: `http://localhost:8080/`
 
-## The Challenge
+Live deployment: [`https://kojinkuro.github.io/dog-party/`](https://kojinkuro.github.io/dog-party/)
 
-Your challenge is to recreate the following image using HTML and SCSS. You've been given some initial files to get started that you must use.
+## 🌐 Context
 
-![this](dog-party-spec.png).
+This project was given during week 9 of a 32 week coding boot camp at Turing School of Software and Design. The project took around 3 hours to complete. It was a solo project where I was the only developer.
+
+## 🎓 Learning Goals
+
+The main focus of this project was about learning to use Sass to match a design comp as closely as possible. Before doing this project I had previous experience using Sass, but slowly moved away from it. Many of the features I enjoyed about Sass had already been implemented into vanilla CSS, so I found little reason to use it. Coming back into using Sass, I spent most of my time using the features that haven't been implemented (mixins and partial imports) and found that they were able to keep my files more organized. In the future I will try using Sass more to see where else they can clean up my files.
+
+## 🎨 Design Comp
+
+![this](dog-party-spec.png)
+
+## 📄 Project Spec
+
+Below is the original project specifications that I had to follow.
+
+[Project Spec](https://frontend.turing.edu/projects/M2-static-comp-challenge.html)
+
+## 🙌 Credits
+
+Coded by [Charles Kwang](https://github.com/KojinKuro)
