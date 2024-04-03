@@ -1,16 +1,125 @@
-@import 'variables';
+@import "fonts";
+@import "variables";
+@import "mixins";
 
 body {
-  background: url('../../dist/images/park.jpg') center/cover;
-  height: 100vh;
+  @include raleyway(400);
+
+  min-height: 100vh;
   width: 100%;
 }
 
 nav {
   // Example of using a variable:
   background-color: $secondary-accent-color;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 30px;
+
+  .dog-icon {
+    width: 50px;
+  }
+
+  .links {
+    display: flex;
+    gap: 20px;
+
+    a {
+      font-size: $large-font-size;
+      color: $font-color-alt;
+      text-decoration: none;
+    }
+  }
 }
 
-.dog-icon {
-  width: 50px;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 15px;
+  padding: 40px;
+
+  background: url("../../dist/images/park.jpg") center/cover;
+
+  img {
+    @include circle-clip(300px);
+    @include add-border(4px, $main-accent-color);
+  }
+}
+
+main {
+  background-color: $background-color;
+}
+
+.dog-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  padding: 50px 20px;
+
+  .dog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: $dog-card-width;
+    text-align: center;
+
+    $card-gap: 10px;
+    gap: $card-gap;
+    margin: 0 calc($card-gap * 2);
+
+    font-size: $default-font-size;
+  }
+
+  img {
+    @include circle-clip(250px);
+    @include add-border(3px, $main-accent-color);
+  }
+}
+
+button {
+  @include add-border(5px, $main-accent-color);
+  @include raleyway(500);
+
+  background-color: $background-color;
+  color: $main-accent-color;
+  font-size: $large-font-size;
+  width: fit-content;
+  padding: 5px 12px;
+}
+
+footer {
+  @include raleyway(600);
+  font-size: $large-font-size;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 15px;
+  gap: 30px;
+
+  background-color: $main-accent-color;
+  color: $font-color-alt;
+  a {
+    color: $font-color-alt;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+}
+
+h1,
+h2 {
+  @include raleyway(500);
 }

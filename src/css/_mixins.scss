@@ -1,0 +1,11 @@
+@mixin add-border($width, $color) {
+  border: $width solid $color;
+}
+
+@mixin circle-clip($diameter) {
+  width: $diameter;
+  height: $diameter;
+
+  border-radius: calc($diameter/2);
+  object-fit: cover;
+}
