@@ -4,6 +4,7 @@
   "description": "Dog Party starter kit using webpack and SCSS/SASS enabled.",
   "main": "index.js",
   "scripts": {
+    "pages": "git subtree push --prefix dist origin gh-pages",
     "start": "webpack server",
     "build": "webpack"
   },
